@@ -1,0 +1,18 @@
+{
+  "default_branch": "dev",
+  "branches": [
+    "dev",
+    "feat/issue-740-create-dashboard-retry-policy-decision-logging",
+    "origin"
+  ],
+  "parent": {
+    "dev": null,
+    "feat/issue-740-create-dashboard-retry-policy-decision-logging": "dev",
+    "origin": "dev"
+  },
+  "order": [
+    "dev",
+    "feat/issue-740-create-dashboard-retry-policy-decision-logging",
+    "origin"
+  ]
+}
