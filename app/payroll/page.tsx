@@ -180,7 +180,7 @@ export default function PayrollDashboardPage() {
           </div>
         </div>
 
-        {/* Contract Paused Alert Banner */}
+        
         {isMutationDisabled && (
           <div
             role="alert"
@@ -226,7 +226,7 @@ export default function PayrollDashboardPage() {
           </div>
         )}
 
-        {/* Post-Submission Adjustment Limits */}
+       
         <div
           data-testid="adjustment-limits-panel"
           className="bg-white rounded-lg shadow-sm border p-4 space-y-3"
@@ -247,7 +247,7 @@ export default function PayrollDashboardPage() {
           </p>
         </div>
 
-        {/* Concurrent Payroll Edit Warnings */}
+       
         {activeConcurrentConflict && (
           <ConcurrentPayrollEditWarningBanner
             evaluation={activeConcurrentConflict}
@@ -258,7 +258,7 @@ export default function PayrollDashboardPage() {
           />
         )}
 
-        {/* Retry Policy Decision Log */}
+        
         <div
           data-testid="retry-decision-log"
           className="bg-white rounded-lg shadow-sm border p-4 space-y-3"
