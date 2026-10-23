@@ -5,6 +5,8 @@ import { InactiveEmployeeWarning } from "@/components/warnings/InactiveEmployeeW
 import { MOCK_PAYROLL_RUNS, MOCK_EMPLOYEES } from "@/lib/api/mockData";
 import { PendingPayrollObligationsPanel } from "@/components/features/payroll/PendingPayrollObligationsPanel";
 import { PayrollAdjustmentApprovalExpiryPanel } from "@/components/features/payroll/PayrollAdjustmentApprovalExpiryPanel";
+import { ReserveThresholdExceptionApprovals } from "@/components/features/payroll/ReserveThresholdExceptionApprovals";
+import { MOCK_RESERVE_THRESHOLD_EXCEPTIONS } from "@/lib/api/mockData";
 
 export default function PayrollApprovalsPage() {
   const pendingRun = MOCK_PAYROLL_RUNS.find((r) => r.status === "pending");
@@ -13,6 +15,7 @@ export default function PayrollApprovalsPage() {
     <DashboardLayout>
       <PayrollAdjustmentApprovalExpiryPanel runs={MOCK_PAYROLL_RUNS} />
       <PendingPayrollObligationsPanel runs={MOCK_PAYROLL_RUNS} />
+      <ReserveThresholdExceptionApprovals exceptions={MOCK_RESERVE_THRESHOLD_EXCEPTIONS} />
       {pendingRun && (
         <>
           <InactiveEmployeeWarning
